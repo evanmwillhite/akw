@@ -1,0 +1,2 @@
+webpackJsonp([0xe70826b53c04],{374:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Blog by Amanda Willhite",subtitle:"Follow the Guilt.",copyright:"© All rights reserved.",menu:[{label:"Articles",path:"/"},{label:"About me",path:"/about/"}],author:{name:"Amanda Willhite",email:"akowillhite@gmail.com",facebook:"https://www.facebook.com/amandakwillhite",rss:"#"}}}},pathContext:{}}}});
+//# sourceMappingURL=path---404-a236658774c4dd2a526b.js.map
