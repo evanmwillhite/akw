@@ -19,7 +19,7 @@ module.exports = {
       name: 'Amanda Willhite',
       email: 'akowillhite@gmail.com',
       facebook: 'https://www.facebook.com/amandakwillhite',
-      rss: '#',
+      rss: '/rss.xml',
     },
   },
   plugins: [

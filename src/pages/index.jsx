@@ -2,18 +2,24 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import Links from '../components/Links'
 
 class IndexRoute extends React.Component {
   render() {
     const items = []
-    const { title, subtitle } = this.props.data.site.siteMetadata
+    const {
+      title,
+      subtitle,
+      author,
+      copyright,
+    } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMarkdownRemark.edges
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
 
     return (
-      <div>
+      <div className="outer">
         <Helmet>
           <title>{title}</title>
           <meta name="description" content={subtitle} />
@@ -22,6 +28,10 @@ class IndexRoute extends React.Component {
         <div className="content">
           <div className="content__inner">{items}</div>
         </div>
+        <footer className="siteFooter">
+          <Links data={author} />
+          <p className="sidebar__copyright">{copyright}</p>
+        </footer>
       </div>
     )
   }
